@@ -38,3 +38,10 @@ print("\nProducts table")
 print(products.head())
 print("\nCustomer Table")
 print(customers.head())
+
+
+customers.to_csv("customers.csv", index=False)
+products.to_csv("products.csv", index=False)
+sales.to_csv("sales.csv", index=False)
+
+print("\nData Successfully saved .")
